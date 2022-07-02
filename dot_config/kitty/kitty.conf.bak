@@ -1,0 +1,37 @@
+#: list fonts `kitty : list-fonts`
+font_family JetBrainsMono Nerd Font Mono
+#: Font size (in pts)
+font_size 16.0
+# symbol_map U+E0A0-U+E0A3,U+E0C0-U+E0C7 PowerlineSymbols
+cursor #FF0000
+cursor_text_color #FFCCAA
+cursor_shape block
+
+scrollback_lines 500
+enable_audio_bell no
+
+remember_window_size  yes
+initial_window_width  1200
+initial_window_height 900
+
+window_padding_width 5
+hide_window_decorations no
+map f1 launch zsh -c "nvim ~/.config/kitty/kitty.conf"
+
+# term xterm-kitty
+
+#: The value of the TERM environment variable to set. Changing this
+#: can break many terminal programs, only change it if you know what
+#: you are doing, not because you read some advice on Stack Overflow
+#: to change it. The TERM variable is used by various programs to get
+#: information about the capabilities and behavior of the terminal. If
+#: you change it, depending on what programs you run, and how
+#: different the terminal you are changing it to is, various things
+#: from key-presses, to colors, to various advanced features may not
+#: work. Changing this option by reloading the config will only affect
+#: newly created windows.
+
+# map kitty_mod+f11    toggle_fullscreen
+# map kitty_mod+f10    toggle_maximized
+# map kitty_mod+f2     edit_config_file
+

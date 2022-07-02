@@ -1,0 +1,40 @@
+searches:
+  go:
+    description: "Google search"
+    query: https://google.com/search?q={value}
+  gh:
+    description: "Github repository"
+    query: https://github.com/{value}
+  mdn:
+    description: "Search into Mozilla Developer Network"
+    query: https://developer.mozilla.org/en-US/search?q={value}
+  ciu:
+    description: "Search into Can I Use"
+    query: https://caniuse.com/?search={value}
+  dh:
+    description: "Look for a cheatsheet"
+    query: https://devhints.io/{value}
+  tr:
+    description: "Translate a word/phrase using Google Translate"
+    query: https://translate.google.com/#auto|en|{value}
+  ht:
+    description: "Check HTTP status code details"
+    query: https://httpstatuses.com/{value}
+  col:
+    description: "Get information about an specific color"
+    query: https://www.color-hex.com/color/{value}
+  uni:
+    description: "Get information about an unicode character"
+    query: https://unicode-table.com/en/{value}
+  dic:
+    description: "Look for a dictionary definition"
+    query: https://www.dictionary.com/browse/{value}
+  the:
+    description: "Look for a word synonyms"
+    query: https://www.thesaurus.com/browse/{value}
+  time:
+    description: "See Time on different places"
+    query: https://time.is/{value}
+  ls:
+    description: "show list of commands"
+    query: home

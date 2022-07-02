@@ -1,0 +1,24 @@
+set shell sh
+set shellopts '-eu'
+# set drawbox 1
+set noignorecase
+set noicons
+
+
+cmd mkdir ${{
+  printf "Directory name:"
+  read ans
+  mkdir "$ans"
+}}
+
+cmd mkfile ${{
+  printf "File name:"
+  read ans
+  touch "$ans"
+}}
+
+map m
+
+
+map mf mkfile
+map md mkdir
