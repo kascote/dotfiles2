@@ -1,5 +1,12 @@
+switch (uname)
+case Linux
+case Darwin
+case '*'
+end
+
+set FZF $HOMEBREW_PREFIX/opt/fzf
+
 if status is-interactive
-  set -l FZF /usr/local/opt/fzf
   source "$FZF/shell/key-bindings.fish"
 
     # Commands to run in interactive sessions can go here

@@ -1,3 +1,5 @@
+eval (/opt/homebrew/bin/brew shellenv)
+
 set -gx LESS_TERMCAP_mb \e'[01;31m'       # begin blinking
 set -gx LESS_TERMCAP_md \e'[01;38;5;74m'  # begin bold
 set -gx LESS_TERMCAP_me \e'[0m'           # end mode
@@ -11,8 +13,8 @@ set -x ZF_DEFAULT_COMMAND "fd --type file --color=always"
 set -x FZF_DEFAULT_OPTS $FZF_DEFAULT_OPTS' --ansi --bind ctrl-f:page-down,ctrl-b:page-up --color=fg:#8b949e,bg:#0d1117,hl:#e3b341 --color=fg+:#eeeeee,bg+:#0d419d,hl+:#d29922 --color=info:#87ff00,prompt:#d7005f,pointer:#af5fff --color=marker:#79c0ff,spinner:#af5fff,header:#f0883e'
 set -x FZF_CTRL_T_COMMAND "$FZF_DEFAULT_COMMAND"
 
-set -Ux DART_SDK /usr/local/Cellar/dart/2.10.4
-set -Ux EDITOR /usr/local/bin/nvim # /Users/fernandezn/bin/nvim/bin/nvim
+set -gx DART_SDK "$HOMEBREW_PREFIX/opt/dart"
+set -gx EDITOR "$HOMEBREW_PREFIX/bin/nvim"
 
 set -x XDG_CONFIG_HOME $HOME/.config
 set -x XDG_DATA_HOME $HOME/.local/share
@@ -22,6 +24,9 @@ set -x C_ALL en_US.UTF-8
 set -x COLORTERM 24bit
 
 fish_add_path $HOME/bin
-fish_add_path $HOME/bin/nvim/bin
-fish_add_path $HOME/Library/Python/3.9/bin
+# fish_add_path $HOME/bin/nvim/bin
+# fish_add_path $HOME/Library/Python/3.9/bin
+
+set -gx nvm_data $HOME/.local/share/nvm
+set -gx nvm_default_version v16.13.0
 

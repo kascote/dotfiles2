@@ -1,0 +1,37 @@
+[user]
+	name = nelson fernandez
+	email = nelson@netflux.com.ar
+[core]
+	editor = vi
+  pager = delta
+	excludesFile = ~/.gitignore
+[init]
+	defaultBranch = main
+[interactive]
+  diffFilter = delta --color-only
+[add.interactive]
+  useBuiltin = false # required for git 2.37.0
+[alias]
+  co = checkout
+  ci = commit
+  st = status -sb
+  tags = tag -l
+  branches = branch -a
+  remotes = remote -v
+  cob = checkout -b
+  edit-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; vim `f`"
+  add-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; git add `f`"
+  ptb = push origin HEAD
+  added = difftool --cached
+[apply]
+  whitespace = nowarn
+[push]
+  default = current
+[delta]
+  navigate = true    # use n and N to move between diff sections
+  light = false      # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
+  features = decorations
+[merge]
+  conflictstyle = diff3
+[diff]
+  colorMoved = default
