@@ -1,2 +1,5 @@
 .config/newsboat/cache.db
 .config/fish/fish_variables
+.config/fish/**/nvm*
+.config/fish/**/_nvm*
+.config/fish/**/fisher.fish

@@ -25,7 +25,7 @@ set -x COLORTERM 24bit
 
 fish_add_path $HOME/bin
 # fish_add_path $HOME/bin/nvim/bin
-# fish_add_path $HOME/Library/Python/3.9/bin
+fish_add_path $HOME/Library/Python/3.8/bin
 
 set -gx nvm_data $HOME/.local/share/nvm
 set -gx nvm_default_version v16.13.0
