@@ -1,6 +1,7 @@
 [user]
 	name = nelson fernandez
 	email = nelson@netflux.com.ar
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJgsPMit6T7gCm77bGbL5k6SNRbHQPCGBjjkltyaLaTO
 [core]
 	editor = vi
   pager = delta
@@ -37,3 +38,9 @@
   colorMoved = default
 [credential]
 	helper = osxkeychain
+[maintenance]
+	repo = /Users/nelson/dev/g/facility-management
+[commit]
+	gpgsign = true
+[gpg]
+	format = ssh
