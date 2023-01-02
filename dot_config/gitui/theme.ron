@@ -1,7 +1,9 @@
 (
     selected_tab: Magenta,
-    command_fg: White,
     selection_bg: Rgb(0x0d, 0x41, 0x9d),
+    selection_fg: White,
+    command_fg: White,
+    cmdbar_bg: Rgb(0x0d, 0x41, 0x9d),
     cmdbar_extra_lines_bg: Rgb(0x0d, 0x41, 0x9d),
     disabled_fg: DarkGray,
     diff_line_add: Green,
@@ -16,4 +18,6 @@
     danger_fg: Red,
     push_gauge_bg: Rgb(0x0d, 0x41, 0x9d),
     push_gauge_fg: White,
+    tag_fg: Magenta,
+    branch_fg: LightYellow,
 )

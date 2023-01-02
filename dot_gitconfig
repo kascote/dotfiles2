@@ -3,7 +3,7 @@
 	email = nelson@netflux.com.ar
 	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJgsPMit6T7gCm77bGbL5k6SNRbHQPCGBjjkltyaLaTO
 [core]
-	editor = vi
+	editor = nvim
   pager = delta
 	excludesFile = ~/.gitignore
 [init]
